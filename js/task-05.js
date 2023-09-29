@@ -5,7 +5,7 @@ targetInput.addEventListener("input", onInputChange);
 
 function onInputChange(evt) {
     targetSpan.textContent = evt.currentTarget.value;
-    if (evt.currentTarget.value === "") {
+    if (evt.currentTarget.value.trim() === "") {
         targetSpan.textContent = "Anonymous";
     }
 }
